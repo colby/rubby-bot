@@ -12,7 +12,7 @@ REQUIRE
 
 INSTALL
 ---
-1. Copy this repo.
+1. Clone repo
 2. `$ ruby rubby.rb`
 3. Kill your parents
 
