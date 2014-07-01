@@ -9,9 +9,11 @@ irc = TCPSocket.new hostname, port
 
 irc.puts "USER rubby 0 * :rubby bot"
 irc.puts "NICK rubby"
-irc.puts "JOIN #infoforcefeed"
 
 while line = irc.gets
+  if line.include? 'PING :'
+    irc.puts 'PONG'
+  end
   puts line
 end
 
